@@ -1,0 +1,44 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX amr: <http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#>
+
+# 1. Show all antibiotics
+SELECT ?antibiotic
+WHERE {
+  ?antibiotic rdf:type amr:Antibiotic .
+}
+
+# 2. Show all pathogens
+SELECT ?pathogen
+WHERE {
+  ?pathogen rdf:type amr:Pathogen .
+}
+
+# 3. Show resistant pathogens and antibiotics
+SELECT ?pathogen ?antibiotic
+WHERE {
+  ?pathogen amr:resistantTo ?antibiotic .
+}
+
+# 4. Show surveillance monitoring
+SELECT ?system ?pathogen
+WHERE {
+  ?system amr:monitors ?pathogen .
+}
+
+# 5. Show reporting relationship
+SELECT ?system ?organisation
+WHERE {
+  ?system amr:reportsTo ?organisation .
+}
+
+# 6. Show policy governance
+SELECT ?policy ?system
+WHERE {
+  ?policy amr:governs ?system .
+}
+
+# 7. Show coordination
+SELECT ?organisation ?system
+WHERE {
+  ?organisation amr:coordinates ?system .
+}

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jashan/ontologies/2026/5/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/jashan/ontologies/2026/5/untitled-ontology-4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AMR_Ontology="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/jashan/ontologies/2026/5/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#coordinates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#coordinates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Organisation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#governs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#governs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#monitors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#monitors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#reportsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#reportsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#resistantTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#resistantTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Antibiotic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Antibiotic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Antibiotic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Organisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Organisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Policy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#ARS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#ARS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+        <AMR_Ontology:monitors rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#E_coli"/>
+        <AMR_Ontology:monitors rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#K_pneumoniae"/>
+        <AMR_Ontology:monitors rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#MRSA"/>
+        <AMR_Ontology:reportsTo rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#EARS_Net"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#AVS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#AVS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+        <AMR_Ontology:monitors rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#MRSA"/>
+        <AMR_Ontology:reportsTo rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#RKI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Carbapenem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Carbapenem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Antibiotic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#DART2030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#DART2030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Policy"/>
+        <AMR_Ontology:governs rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#ARS"/>
+        <AMR_Ontology:governs rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#AVS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#EARS_Net -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#EARS_Net">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#SurveillanceSystem"/>
+        <AMR_Ontology:coordinates rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#ARS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#ECDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#ECDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Organisation"/>
+        <AMR_Ontology:coordinates rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#EARS_Net"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#E_coli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#E_coli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen"/>
+        <AMR_Ontology:resistantTo rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Carbapenem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#K_pneumoniae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#K_pneumoniae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen"/>
+        <AMR_Ontology:resistantTo rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Carbapenem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#MRSA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#MRSA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Pathogen"/>
+        <AMR_Ontology:resistantTo rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Oxacillin"/>
+        <AMR_Ontology:resistantTo rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Vancomycin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Oxacillin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Oxacillin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Antibiotic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#RKI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#RKI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Organisation"/>
+        <AMR_Ontology:coordinates rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#AVS"/>
+        <AMR_Ontology:governs rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#DART2030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Vancomycin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Vancomycin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#Antibiotic"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
