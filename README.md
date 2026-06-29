@@ -92,7 +92,7 @@ sparql_queries.rq
 
 ## Author
 
-Dr. Yadvinder Kaur
+Yadvinder Kaur
 
 M.Sc. Global Public Health
 
