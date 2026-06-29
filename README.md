@@ -89,6 +89,11 @@ sparql_queries.rq
 - OWLViz
 
 ---
+## Ontology Visualization
+
+The figure below shows the ontology structure created in Protégé.
+
+![OntoGraf](screenshots/ontograf.png)
 
 ## Author
 
