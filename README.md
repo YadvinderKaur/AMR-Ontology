@@ -1,97 +1,101 @@
-AMR Ontology
+# AMR Ontology
 
-Introduction
+## Overview
 
-This repository contains a simple ontology on Antimicrobial Resistance (AMR) developed as part of a learning project using Protégé.
+This project presents a simple OWL ontology for Antimicrobial Resistance (AMR) developed using Protégé.
 
-The aim of this project was to understand the fundamentals of ontology modelling, represent AMR-related concepts, and perform basic semantic queries using SPARQL.
+The ontology models the relationships between:
 
-Ontology Contents
+- Antibiotics
+- Pathogens
+- Surveillance Systems
+- Organisations
+- Policies
 
-The ontology includes the following classes:
-
-Antibiotic
-Pathogen
-Organisation
-SurveillanceSystem
-Policy
-
-Individuals
-
-Antibiotics
-
-Carbapenem
-Oxacillin
-Vancomycin
-
-Pathogens
-
-E. coli
-Klebsiella pneumoniae
-MRSA
-
-Organisations
-
-ECDC
-RKI
-
-Surveillance Systems
-
-ARS
-AVS
-
-Policy
-
-DART2030
-
-Object Properties
-
-The ontology currently includes the following object properties:
-
-resistantTo
-monitoredBy
-developedBy
-implementsPolicy
-treats
-
-These properties describe relationships between pathogens, antibiotics, organisations, surveillance systems, and policies.
-
-
-SPARQL Queries
-
-The repository also contains a collection of example SPARQL queries (`sparql_queries.rq`) used to retrieve information from the ontology, including:
-
-* Listing antibiotics
-* Listing pathogens
-* Finding resistant pathogen-antibiotic pairs
-* Retrieving organisations
-* Retrieving surveillance systems
-
-
-
-Software Used
-
-* Protégé 5.6.9
-* OWLViz
-* OntoGraf
-* SPARQL Query Plugin
+The project also demonstrates SPARQL queries for retrieving ontology information.
 
 ---
 
-## Repository Files
+## Ontology Structure
+
+### Classes
+
+- Antibiotic
+- Pathogen
+- Organisation
+- SurveillanceSystem
+- Policy
+
+### Individuals
+
+Antibiotics
+- Carbapenem
+- Oxacillin
+- Vancomycin
+
+Pathogens
+- MRSA
+- E_coli
+- K_pneumoniae
+
+Organisations
+- WHO
+- ECDC
+- RKI
+
+Surveillance Systems
+- ARS
+- AVS
+
+Policies
+- DART2030
+
+---
+
+## Object Properties
+
+- resistantTo
+- monitoredBy
+- developedBy
+- implementsPolicy
+- treats
+
+---
+
+## SPARQL Queries
+
+Example queries included:
+
+- List all antibiotics
+- List all pathogens
+- Retrieve resistant pathogen-antibiotic pairs
+- Retrieve surveillance systems
+- Retrieve organisations
+
+The queries are available in:
 
 ```
-AMR_ontology.rdf
 sparql_queries.rq
-README.md
 ```
+
+---
+
+## Software
+
+- Protégé 5.6.9
+- OWL API
+- SPARQL Query Plugin
+- OntoGraf
+- OWLViz
 
 ---
 
 ## Author
 
-Yadvinder Kaur
+Dr. Yadvinder Kaur
 
 M.Sc. Global Public Health
 
-Deggendorf Institute of Technology, Germany
+Deggendorf Institute of Technology
+
+Germany
