@@ -46,7 +46,9 @@ Which genes are associated with carbapenem resistance?
 Which bacterial species carry blaKPC-2?
 Which hospitals report isolates to ARS?
 Which sequence types are associated with specific resistance phenotypes?
+
 Repository Contents
+
 AMR_ontology.rdf — RDF/XML ontology
 AMR_Ontology.owx — Protégé project
 sparql_queries.rq — Example SPARQL queries
