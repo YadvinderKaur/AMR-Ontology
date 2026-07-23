@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/jashan/ontologies/2026/5/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="AMR_Ontology" IRI="http://www.semanticweb.org/jashan/ontologies/2026/AMR_Ontology#"/>
+    <Prefix name="untitled-ontology-4" IRI="http://www.semanticweb.org/jashan/ontologies/2026/5/untitled-ontology-4#"/>
+    <Declaration>
+        <Class IRI="#Antibiotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BacterialIsolate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthcareFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceGene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceMutation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistancePhenotype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequenceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurveillanceSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWithResistanceTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToSpecies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carriesGene"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collectedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#confersResistanceTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#coordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#governs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMutation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhenotype"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSequenceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#monitors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reportsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resistantTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ARS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AVS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carbapenem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CarbapenemResistant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DART2030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EARS_Net"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ECDC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#E_coli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hospital_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#K_pneumoniae"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MRSA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oxacillin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RKI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ST258"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vancomycin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blaKPC_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ompK36_LossOfFunction"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#SurveillanceSystem"/>
+        <NamedIndividual IRI="#ARS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurveillanceSystem"/>
+        <NamedIndividual IRI="#AVS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antibiotic"/>
+        <NamedIndividual IRI="#Carbapenem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResistancePhenotype"/>
+        <NamedIndividual IRI="#CarbapenemResistant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Policy"/>
+        <NamedIndividual IRI="#DART2030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurveillanceSystem"/>
+        <NamedIndividual IRI="#EARS_Net"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organisation"/>
+        <NamedIndividual IRI="#ECDC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pathogen"/>
+        <NamedIndividual IRI="#E_coli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BacterialIsolate"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HealthcareFacility"/>
+        <NamedIndividual IRI="#Hospital_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pathogen"/>
+        <NamedIndividual IRI="#K_pneumoniae"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pathogen"/>
+        <NamedIndividual IRI="#MRSA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antibiotic"/>
+        <NamedIndividual IRI="#Oxacillin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organisation"/>
+        <NamedIndividual IRI="#RKI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SequenceType"/>
+        <NamedIndividual IRI="#ST258"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Antibiotic"/>
+        <NamedIndividual IRI="#Vancomycin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResistanceGene"/>
+        <NamedIndividual IRI="#blaKPC_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResistanceMutation"/>
+        <NamedIndividual IRI="#ompK36_LossOfFunction"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#monitors"/>
+        <NamedIndividual IRI="#ARS"/>
+        <NamedIndividual IRI="#E_coli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#monitors"/>
+        <NamedIndividual IRI="#ARS"/>
+        <NamedIndividual IRI="#K_pneumoniae"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#monitors"/>
+        <NamedIndividual IRI="#ARS"/>
+        <NamedIndividual IRI="#MRSA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reportsTo"/>
+        <NamedIndividual IRI="#ARS"/>
+        <NamedIndividual IRI="#EARS_Net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#monitors"/>
+        <NamedIndividual IRI="#AVS"/>
+        <NamedIndividual IRI="#MRSA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reportsTo"/>
+        <NamedIndividual IRI="#AVS"/>
+        <NamedIndividual IRI="#RKI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#governs"/>
+        <NamedIndividual IRI="#DART2030"/>
+        <NamedIndividual IRI="#ARS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#governs"/>
+        <NamedIndividual IRI="#DART2030"/>
+        <NamedIndividual IRI="#AVS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coordinates"/>
+        <NamedIndividual IRI="#EARS_Net"/>
+        <NamedIndividual IRI="#ARS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coordinates"/>
+        <NamedIndividual IRI="#ECDC"/>
+        <NamedIndividual IRI="#EARS_Net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resistantTo"/>
+        <NamedIndividual IRI="#E_coli"/>
+        <NamedIndividual IRI="#Carbapenem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToSpecies"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#K_pneumoniae"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carriesGene"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#blaKPC_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#collectedAt"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#Hospital_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMutation"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#ompK36_LossOfFunction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPhenotype"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#CarbapenemResistant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSequenceType"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#ST258"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reportsTo"/>
+        <NamedIndividual IRI="#Example_Isolate_001"/>
+        <NamedIndividual IRI="#ARS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reportsTo"/>
+        <NamedIndividual IRI="#Hospital_A"/>
+        <NamedIndividual IRI="#ARS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resistantTo"/>
+        <NamedIndividual IRI="#K_pneumoniae"/>
+        <NamedIndividual IRI="#Carbapenem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resistantTo"/>
+        <NamedIndividual IRI="#MRSA"/>
+        <NamedIndividual IRI="#Oxacillin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resistantTo"/>
+        <NamedIndividual IRI="#MRSA"/>
+        <NamedIndividual IRI="#Vancomycin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#coordinates"/>
+        <NamedIndividual IRI="#RKI"/>
+        <NamedIndividual IRI="#AVS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#governs"/>
+        <NamedIndividual IRI="#RKI"/>
+        <NamedIndividual IRI="#DART2030"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithResistanceTo"/>
+        <NamedIndividual IRI="#blaKPC_2"/>
+        <NamedIndividual IRI="#Carbapenem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#confersResistanceTo"/>
+        <NamedIndividual IRI="#ompK36_LossOfFunction"/>
+        <NamedIndividual IRI="#Carbapenem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWithResistanceTo"/>
+        <Class IRI="#ResistanceGene"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToSpecies"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carriesGene"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#collectedAt"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#confersResistanceTo"/>
+        <Class IRI="#ResistanceMutation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#coordinates"/>
+        <Class IRI="#Organisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#governs"/>
+        <Class IRI="#Policy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMutation"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhenotype"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSequenceType"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#monitors"/>
+        <Class IRI="#SurveillanceSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reportsTo"/>
+        <Class IRI="#BacterialIsolate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resistantTo"/>
+        <Class IRI="#Pathogen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWithResistanceTo"/>
+        <Class IRI="#Antibiotic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToSpecies"/>
+        <Class IRI="#Pathogen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#carriesGene"/>
+        <Class IRI="#ResistanceGene"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#collectedAt"/>
+        <Class IRI="#HealthcareFacility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#confersResistanceTo"/>
+        <Class IRI="#Antibiotic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#coordinates"/>
+        <Class IRI="#SurveillanceSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#governs"/>
+        <Class IRI="#SurveillanceSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMutation"/>
+        <Class IRI="#ResistanceMutation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhenotype"/>
+        <Class IRI="#ResistancePhenotype"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSequenceType"/>
+        <Class IRI="#SequenceType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#monitors"/>
+        <Class IRI="#Pathogen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reportsTo"/>
+        <Class IRI="#SurveillanceSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resistantTo"/>
+        <Class IRI="#Antibiotic"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
