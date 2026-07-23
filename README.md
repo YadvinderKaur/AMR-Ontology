@@ -1,106 +1,58 @@
-# AMR Ontology
+AMR Ontology
+Overview
 
-## Overview
+This project presents an OWL ontology for Antimicrobial Resistance (AMR) surveillance developed in Protégé. The ontology models the relationships between bacterial isolates, pathogens, resistance genes, resistance mutations, resistance phenotypes, antibiotics, surveillance systems, healthcare facilities, organizations, and national AMR policies.
 
-This project presents a simple OWL ontology for Antimicrobial Resistance (AMR) developed using Protégé.
+Ontology Extension
 
-The ontology models the relationships between:
+The ontology was extended from a simple classification model to include isolate-level semantic relationships, enabling a more meaningful representation of AMR surveillance data.
 
-- Antibiotics
-- Pathogens
-- Surveillance Systems
-- Organisations
-- Policies
+An example bacterial isolate (Example_Isolate_001) demonstrates how multiple AMR entities can be connected within a single knowledge graph.
 
-The project also demonstrates SPARQL queries for retrieving ontology information.
+The example isolate is linked to:
 
----
+Species: Klebsiella pneumoniae
+Resistance Gene: blaKPC-2
+Resistance Mutation: ompK36 Loss of Function
+Resistance Phenotype: Carbapenem Resistant
+Antibiotic: Carbapenem
+Sequence Type: ST258
+Healthcare Facility: Hospital_A
+Surveillance System: ARS
+Object Properties
 
-## Ontology Structure
+The ontology includes semantic relationships such as:
 
-### Classes
+belongsToSpecies
+carriesGene
+hasMutation
+hasPhenotype
+resistantTo
+hasSequenceType
+collectedAt
+reportsTo
+associatedWithResistanceTo
+confersResistanceTo
+monitors
+coordinates
+governs
+Example Knowledge Graph
 
-- Antibiotic
-- Pathogen
-- Organisation
-- SurveillanceSystem
-- Policy
+The OntoGraf visualization demonstrates how an individual bacterial isolate connects genomic, phenotypic, clinical and surveillance information into a single semantic network.
 
-### Individuals
+This allows queries such as:
 
-Antibiotics
-- Carbapenem
-- Oxacillin
-- Vancomycin
-
-Pathogens
-- MRSA
-- E_coli
-- K_pneumoniae
-
-Organisations
-- WHO
-- ECDC
-- RKI
-
-Surveillance Systems
-- ARS
-- AVS
-
-Policies
-- DART2030
-
----
-
-## Object Properties
-
-- resistantTo
-- monitoredBy
-- developedBy
-- implementsPolicy
-- treats
-
----
-
-## SPARQL Queries
-
-Example queries included:
-
-- List all antibiotics
-- List all pathogens
-- Retrieve resistant pathogen-antibiotic pairs
-- Retrieve surveillance systems
-- Retrieve organisations
-
-The queries are available in:
-
-```
-sparql_queries.rq
-```
-
----
-
-## Software
-
-- Protégé 5.6.9
-- OWL API
-- SPARQL Query Plugin
-- OntoGraf
-- OWLViz
-
----
-## Ontology Visualization
-
-The figure below shows the ontology structure created in Protégé.
-
-![OntoGraf](screenshots/ontograf.png)
-
-## Author
-
-Yadvinder Kaur
-
-M.Sc. Global Public Health
-
-Deggendorf Institute of Technology
-
-Germany
+Which genes are associated with carbapenem resistance?
+Which bacterial species carry blaKPC-2?
+Which hospitals report isolates to ARS?
+Which sequence types are associated with specific resistance phenotypes?
+Repository Contents
+AMR_ontology.rdf — RDF/XML ontology
+AMR_Ontology.owx — Protégé project
+sparql_queries.rq — Example SPARQL queries
+OntoGraf screenshots
+Software
+Protégé
+OWL 2
+RDF/XML
+OntoGraf
